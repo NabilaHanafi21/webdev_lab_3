@@ -1,124 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="/icons8-letter-n-in-asl-32.png" type="image/png" sizes="128x128">
     <style>
-        table {
-            border: 2px solid #217088;
-            border-collapse: collapse;
+        body
+        {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(itik.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container
+        {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            /*background-color: #ffffff41;
+            border: 1px solid #ccc;*/
+            
+            
+        }
+
+        .main
+        {
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: repeat(2, 1fr); 
+            gap: 10px;
+            
+        }
+
+        /*div1
+        {
             width: 100%;
+            /*border: 10px solid rgb(63, 106, 155);
+            padding: 30px;
+            margin: 30px;
+        }*/
+        .nH1 video
+        { 
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 0;
+            padding-top: 10%;
         }
 
-        th, td {
-            border: 1px solid #217088;
-            padding: 8px;
-            text-align: align-left;
+        .nH2 li
+        {
+            font-family: sans-serif;
+            font-size: 25px;
+            text-align: justify;
+            padding: 0px;
+            margin: 30px;
+
         }
 
-        th {
-            background-color: #95658e;
-            color: #fefefe;
+        .nH3 p
+        {
+            font-family: sans-serif;
+            font-size: 25px;
+            text-align: center;
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+        .nH3 video
+        { 
+            max-width: 80%;
+            border-radius: 8px;
         }
 
-        tr:hover {
-            background-color: #ddd;
+        .nH4 p
+        {
+            font-family: sans-serif;
+            font-size: 25px;
+            text-align: left;
+            padding: 0px;
+            margin: 30px;
         }
 
-        td {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            color: #333;
+        .nH5 video
+        { 
+            max-width: 80%;
+            border-radius: 8px;
         }
 
-        h1
+        .nH5, .nH6 p
+        {
+            font-family: sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        .nH2, .nH3 .nH4, .nH5, .nH6 
+        {
+            border-radius: 8px solid #ccc;
+            background-color: rgba(252, 252, 252, 0.293); 
+            padding: 0px;
+            margin: 30px;
+            text-align: center;
+        }
+
+        header
         {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 20pt;
+            font-size: 36px;
             font-weight: bold;
             text-align: center;
         }
-    </style>
-    <title>My Personal Details</title>
-</head>
-<body>
-    <h1>Biodata</h1>
-    <video>
-        <source src="D:\webdev_lab_3\IMG_3184 2023-11-05 16_09_08.mov" type=video/mov>
-    </video>
-    <table>
-        <thead>
-        <tr>
-            <th colspan="2"><strong>Name</strong></th>
-            <td>Nabila Syafiqah binti Mohd Hanafi</td>
-            <td colspan ="photo"><img src="./66b371da-e122-43fc-a127-1a362c5acc30.jpg" alt="" width="100px" height="120px"></td>
-        </tr>
 
-        <tr>
-            <th colspan="2"><strong>Date of Birth</strong></th>
-            <td colspan="2">21 June 2002</td>
-        </tr>
-        <tr>
-            <th colspan="2"><strong>Religion</strong></th>
-            <td colspan="2">Islam</td>
-        </tr>
-        <tr>
-            <th colspan="2"><strong>Race</strong></th>
-            <td colspan="2">Malay</td>
-        </tr>
-        <tr>
-            <th rowspan="5"><strong>Address</strong></th>
-        </tr>
-        <tr>
-            <th>Street</th>
-            <td colspan="2">19, Jalan 15/5A</td>
-        </tr>
-        <tr>
-            <th>Town</th>
-            <td colspan="2">Bandar Baru Bangi</td>
-        </tr>
-        <tr>
-            <th>District</th>
-            <td colspan="2">Hulu Langat</td>
-        </tr>
-        <tr>
-            <th>State</th>
-            <td colspan="2">Selangor</td>
-        </tr>
-        <tr>
-            <th rowspan="4"><strong>Contact</strong></th>
-        </tr>
-        <tr>
-            <th>Mobile Phone</th>
-            <td colspan="2">011-10549841</td>
-        </tr>
-        <tr>
-            <th>Social Media</th>
-            <td colspan="2">NabilaHanafi21</td>
-        </tr>
-        <tr>
-            <th>Website</th>
-            <td colspan="2"><a href="[https://github.com/]">My GitHub</a></td>
-        </tr>
-        <tr>
-            <th colspan="2"><strong>Course and Institution</strong></th>
-            <td colspan="2">Software Engineering at Universiti Tun Hussein Onn</td>
-        </tr>
-        <tr>
-            <th colspan="2"><strong>Programming Skills</strong></th>
-            <td colspan="2">HTML, PhP, Java, C, MySQL</td>
-        </tr>
-        <tr>
-            <th colspan="2"><strong>Personal Interests</strong></th>
-            <td colspan="2">Sports</td>
-        </tr>
-        <tr>
-            <th colspan="2"><strong>Future Plan in 2024</strong></th>
-            <td colspan="2">Internship at Intel</td>
-        </tr>
-        </thead>
-    </table>
+        video
+        {
+            display: block;
+            margin: 0 auto;
+        }
+
+        li
+        {
+            list-style: none;
+        }
+
+        title
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<title>Nabila Hanafi</title>
+<body>
+    <div class="main">
+    <div class="container nH1">
+            <video autoplay muted controls loop>
+                <source src="./IMG_3184 2023-11-05 16_09_08.mp4" type=video/mp4>
+            </video>
+        </div>
+
+        <div2 class="container nH2">
+            <li>Name: Nabila Syafiqah binti Mohd Hanafi</li>
+            <li>Date of Birth: 21 June 2002</li>
+            <li>Religion: Islam</li>
+            <li>Race: Malay</li>
+            <li>Address: Seksyen 15, Bandar Baru Bangi</li>
+            <li>State: Selangor</li>
+            <li>Contact No.: 011 1054 9841</li>
+        </div2>
+
+        <div class="container nH3">
+            <p>My Hobby</p>
+            <p>I love watching movies at the cinema which most of the time I'd go alone and I love watchine looooong series on Netflix too.</p>
+            <video autoplay muted controls loop>
+                <source src="./20231107-213543-560 2023-11-07 13_39_26.mp4" type=video/mp4>
+            </video>
+        </div>
+        <div class="container nH4">
+            <p>Course of Study: Software Engineering</p>
+            <p>Institution: Universiti Tun Hussein Onn</p>
+            <p>Programming Skills: HTML, PhP, Java, C#, C </p>
+            <p>Personal Interest: Sports</p>
+        </div>
+        <div class="container nH5">
+            <p>This was my recent trip to Purwokerto for a Mobility Programme offered by Institut Teknologi Telkom Purwokerto, Indonesia.</p>
+            <video autoplay muted controls loop>
+                <source src="./A1E1145B-FC85-4DE9-BA35-B201A3A91F8C 2023-11-07 14_07_30.mp4" type=video/mp4>
+            </video>
+        </div>
+        <div class="container nH6">
+            <p>Future Plan in 2024</p>
+            <p>Land an internship role at Intel</p>
+            <img src="./intel.png">
+        </div>
+    </div>
 </body>
 </html>
